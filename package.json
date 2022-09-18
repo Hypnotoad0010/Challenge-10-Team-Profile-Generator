@@ -1,15 +1,26 @@
 {
-    "name": "static-site",
+    "name": "profile-generator",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "Node index.js"
+    "directories": {
+        "lib": "lib",
+        "test": "tests"
     },
-    "author": "",
+    "scripts": {
+        "test": "Jest",
+        "start": "Node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Hypnotoad0010/Challenge-10-Team-Profile-Generator/blob/main/index.js"
+    },
+    "author": "Isaac Harris",
     "license": "ISC",
     "dependencies": {
-    "inquirer": "^8.2.4"
+        "inquirer": "^8.2.4"
+    },
+    "devDependencies": {
+        "jest": "^29.0.3"
     }
-  }
+}
