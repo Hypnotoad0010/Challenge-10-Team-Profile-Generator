@@ -1,3 +1,4 @@
+const jest = require('jest');
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -7,7 +8,7 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 // Links you to created html page in source folder
-const generatePage = require("./src/template");
+const generatePage = require("./src/Emploees");
 
 
 // Team members start off as an empty array
