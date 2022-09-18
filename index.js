@@ -8,7 +8,7 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 // Links you to created html page in source folder
-const generatePage = require("./src/Emploees");
+const generatePage = require('./src/Employees');
 
 
 // Team members start off as an empty array
@@ -278,6 +278,8 @@ const writeFile = data => {
 
 addManager()
 .then(addEmployee)
+.then(addEngineer)
+.then(addIntern)
 .then(team => {
   return generatePage(team);
 })
